@@ -1,0 +1,248 @@
+*{
+    padding:0px; margin:0px;
+}
+
+#navibar{
+    display:flex;
+    position:sticky;/* ISKO RELATIVE KARNE SE MERE NAVBAR MAIN BACKGROUND NI AA RAHA THA*/
+    top: 0;
+}
+
+#navibar::before{
+    content:"";
+    background-color: black;
+    opacity: 0.4;
+    position:absolute;top:0px; left:0px;
+    height:100%; width:100%;
+    z-index:-1;
+}
+.box{
+    display:flex;
+    margin:  7px 13px;
+    padding-top:14px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+    
+}
+#navibar ul li{
+   list-style:none;
+}
+#navibar ul li a{
+    text-decoration:none;
+    color: white; 
+    padding:4px 24px;
+   font-weight: bold;
+   border-radius: 15px;
+   list-style:none;
+   font-family: 'Baloo Bhaijaan 2', cursive;
+   
+}
+#navibar ul li :hover{
+    background-color: white;
+    color: black; 
+   
+}
+ #navibar ul li a:hover{
+    color:blue
+    ;
+    
+}
+
+
+img{
+    padding:3px 23px;
+    opacity: 1;
+}
+
+#home{
+    /* border: 2px solid black; */
+    padding: 3px 255px;
+    display:flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:545px;
+    font-family: 'Bree Serif', serif;
+    
+
+    
+    
+}
+#home p{
+
+    font-weight: bold;
+    color:white;
+font-size:20px;
+}
+#home::before{
+   content:"";
+  
+    background:url("imgs/bg1.jpg") no-repeat center center/cover;
+    height:90%;
+     width:100%;
+     position:absolute;
+top:0px; left:0px; right: 0;
+    z-index:-1;
+    opacity: 0.89; 
+    
+
+    
+}
+button{
+    padding:8px 24px;
+    margin:11px 40px;
+    color:white;
+    cursor:pointer;
+    background-color: red;
+    border:2px solid white;
+    border-radius: 23px;
+}
+#home h1{
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-size:45px;
+    border-radius:6px;
+}
+
+.services{
+    display:flex;
+    /* border:2px solid black; */
+    height:400px;
+    justify-content: center;
+    align-items:center;
+}
+span h1{
+    text-align:center;
+    font-size:44px;
+    font-family: 'Bree Serif', serif; 
+    padding:15px 35px;
+    margin-bottom: 10px;
+}
+.container{
+                width: 33%;
+               height: 420px;
+               border: 2px solid red;
+               padding: 7px 11px;
+               margin: 5px 8px;
+               border-radius:33px;
+               background-color: rgb(214, 211, 211);
+
+}
+ .container div  img{
+    height:150px;
+    padding: 21px 61px;
+     margin:auto;
+    display:block;
+    width:50%;
+}
+.container h2{
+    
+    font-size: 29px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bree Serif', serif; 
+
+}
+.container p{
+    margin:15px 4px;
+    padding:4px 3px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.client-section{
+    display:flex;
+    /* border:3px solid ; */
+     align-items: center;  
+    justify-content: center; 
+    height:200px;
+
+}
+.client-items img{
+height:150px;
+width:150px;
+opacity:2;
+
+}
+#guest{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:33px 4px;
+    font-family: 'Bree Serif', serif; 
+    font-size:54px;
+    position:relative;
+    top:-16px;
+}
+.body{
+    display:flex;
+    flex-direction:column;
+    /* border:2px solid blue; */
+    position:relative;
+    margin-top:55px ;
+    height:auto;
+}
+.body::before{
+    content:"";
+    background:url(../bg5.webp) no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    position:absolute;
+    opacity:0.4;
+}
+
+.clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    /* border:2px solid black; */
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.center{
+    font-family: 'Bree Serif', serif; 
+    font-weight: bold;
+    font-size:45px;
+
+}
+.contact::before{
+    content: "";
+    background:url(../contactimg.jpg)no-repeat center center/cover;
+    height:100%;width:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:0.7;
+}
+footer{
+    background: black;
+    color:white;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+
+
+
+}
+.contactbox{
+    /* padding-bottom:34px; */
+    margin-top: 34px;
+    box-sizing: border-box;
+}
+.contactbox input,
+.contactbox textarea{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    padding:10px;
+    border:2px solid black;
+    width:100%;/* WIDTH NU 100% KRDENE SE MERA MSG JO NEECHE AA RAHA THA WO UPAR AA JAAYGA*/
+}
+.contactbox label{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 20px;
+}
+
